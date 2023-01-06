@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: dev
+  jpa:
+    hibernate:
+      ddl-auto: none
+  flyway:
+    outOfOrder: true
+    baselineOnMigrate: true
+management:
+  endpoint:
+    health:
+      group:
+        status:
+          inclzude: ping,db
